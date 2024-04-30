@@ -1,0 +1,19 @@
+program -> HAI statement_list KTHXBYE
+
+statement_list -> statement | statement statement_list
+
+statement -> assignment_statement | function_declaration | if_statement | print_statement
+
+assignment_statement -> VARIABLE EQ expression
+
+function_declaration -> I_CAN_HAZ_FUNCTION VARIABLE LPAREN parameter_list RPAREN statement_list KTHX
+
+parameter_list -> VARIABLE | VARIABLE COMMA parameter_list
+
+if_statement -> O_RLY YA_RLY statement_list NO_WAI statement_list OIC
+
+print_statement -> VISIBLE expression
+
+expression -> term | term ADD term | term SUB term
+
+term -> INTEGER | VARIABLE | LPAREN expression RPAREN
